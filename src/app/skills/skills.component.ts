@@ -5,8 +5,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
-  skills = ["Angular", "JavaScript", "TypeScript", "HTML5", "CSS3", "Bootstrap", 
-    "Jest", "JUnit", "Java", "Spring Boot","SQL", "Git", "Agile", "Postman", "VersionOne"];
+  skills = [{ name: 'Angular', icon: 'assets/links/angular_icon.gif' },
+  { name: 'HTML5', icon: 'assets/links/html5.png' },
+  { name: 'CSS3', icon: 'assets/links/CSS3.png' },
+  { name: 'Bootstrap', icon: 'assets/links/bootstrap.png' },
+  { name: 'Jest', icon: 'assets/links/jest.png' },
+  { name: 'JUnit', icon: 'assets/links/junit.png' },
+  { name: 'Java', icon: 'assets/links/java.png' },
+  { name: 'Spring Boot', icon: 'assets/links/spring_icon.png' },
+  { name: 'SQL', icon: 'assets/links/sql_icon.png' },
+  { name: 'Git', icon: 'assets/links/git_icon.png' },
+  { name: 'Agile', icon: 'assets/links/agile_icon.png' },
+  { name: 'Postman', icon: 'assets/links/postman_icon.png' },
+  { name: 'VersionOne', icon: 'assets/links/versionone_icon.png' }];
     skillPositions: string[][]=[];
     skillRotation: string[] = [];
     isDragging = false;

@@ -10,6 +10,9 @@
     (mousedown) = "startDragging(i)"
     (mouseup) = "stopDragging()"
     >
-        {{skill}}
+        <img [src]="skill.icon" 
+         [alt]="skill.name" 
+         [title]="skill.name" 
+         width="70" height="60"/>
     </div>
 </div>

@@ -12,7 +12,6 @@
 
 .skill {
     position: absolute;
-    background-color: #fff;
     color:rgb(4, 8, 11);
     font-size: 16px;
     border-radius: 5px;
@@ -23,5 +22,13 @@
     width: fit-content;
     display: block;
     transition: left 0.1s ease, top 0.1s ease;
-    box-shadow: 1px 1px rgba(0,0,0,0.3);
+    /* box-shadow: 1px 1px rgba(0,0,0,0.3); */
+}
+
+.skill img {
+  transition: transform 0.2s ease;
+}
+
+.skill img:hover {
+  transform: scale(1.1);
 }
