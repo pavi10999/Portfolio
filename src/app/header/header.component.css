@@ -1,6 +1,8 @@
 .links {
     display:  flex;
     margin: 25px;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
 } 
     a {
     display: flex;
@@ -10,15 +12,18 @@
     position: relative;
     width: 100px;
     margin: 0.25rem 1rem;
-    img {
+    }
+
+    a img {
         width: 100px;
     }
-    &::before {
+
+    a::before {
         content: "";
         opacity: 1;
         transition: all 0.2s;
         position: absolute;
-        background: radial-gradiant(rgb(0, 3, 5) 40%, transparent 70%);
+        background: radial-gradient(rgb(0, 3, 5) 40%, transparent 70%);
         top: -25px;
         left: -25px;
         height: 150px;
@@ -26,15 +31,17 @@
         border-radius: 100%;
         z-index: -5;
     }
-    div.hidden-label {
+    
+    a .hidden-label {
         opacity: 0;
         transition: all 0.2s;
         color: #fff;
         font-size: 0.85rem;
     }
-    &:focus, &:hover {
-        &::before, div.hidden-label {
-            opacity: 1;
-        } 
-    }
-}
+    
+     a:focus::before,
+      a:hover::before,
+      a:focus .hidden-label,
+      a:hover .hidden-label {
+        opacity: 1;
+      }
