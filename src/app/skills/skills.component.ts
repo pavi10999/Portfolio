@@ -6,18 +6,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
   skills = [{ name: 'Angular', icon: 'assets/links/angular_icon.gif' },
+    { name: 'TypeScript', icon: 'assets/links/typescript.png' },
+    { name: 'Javascript', icon: 'assets/links/javascript.png' },
   { name: 'HTML5', icon: 'assets/links/html5.png' },
   { name: 'CSS3', icon: 'assets/links/CSS3.png' },
   { name: 'Bootstrap', icon: 'assets/links/bootstrap.png' },
   { name: 'Jest', icon: 'assets/links/jest.png' },
-  { name: 'JUnit', icon: 'assets/links/junit.png' },
   { name: 'Java', icon: 'assets/links/java.png' },
-  { name: 'Spring Boot', icon: 'assets/links/spring_icon.png' },
-  { name: 'SQL', icon: 'assets/links/sql_icon.png' },
-  { name: 'Git', icon: 'assets/links/git_icon.png' },
-  { name: 'Agile', icon: 'assets/links/agile_icon.png' },
-  { name: 'Postman', icon: 'assets/links/postman_icon.png' },
-  { name: 'VersionOne', icon: 'assets/links/versionone_icon.png' }];
+  { name: 'Spring Boot', icon: 'assets/links/springboot.jpeg' },
+  { name: 'SQL', icon: 'assets/links/sql.png' },
+  { name: 'Git', icon: 'assets/links/git_hub.png' },
+  { name: 'Agile', icon: 'assets/links/agile.png' },
+  { name: 'Postman', icon: 'assets/links/postman.png' },
+  { name: 'VersionOne', icon: 'assets/links/versionone.jpeg' },
+  { name: 'JUnit', icon: 'assets/links/junit.png' }];
     skillPositions: string[][]=[];
     skillRotation: string[] = [];
     isDragging = false;

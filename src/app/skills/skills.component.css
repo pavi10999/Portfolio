@@ -4,11 +4,11 @@
     height: 200px;
     margin: 20px;
 }
-.skill-wrapper.dragging
- {
-        cursor: grabbing;
-    }
 
+.skill-wrapper.dragging
+{
+        cursor: grabbing;
+}
 
 .skill {
     position: absolute;
@@ -22,7 +22,6 @@
     width: fit-content;
     display: block;
     transition: left 0.1s ease, top 0.1s ease;
-    /* box-shadow: 1px 1px rgba(0,0,0,0.3); */
 }
 
 .skill img {
