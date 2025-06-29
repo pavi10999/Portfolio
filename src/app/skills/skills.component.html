@@ -1,18 +1,7 @@
-<div class="skill-wrapper"
-[class.dragging] = "currentlyDragging != undefined"
-    (mousemove) ="mouseMove($event)">
-    <div *ngFor="let skill of skills; index as i" 
-    class="skill"
-    [style.left]="skillPositions[i][0]" 
-    [style.top] ="skillPositions[i][1]" 
-    [style.transform]="skillPositions[i][2]"
-    [class.dragging] = "currentlyDragging != undefined"
-    (mousedown) = "startDragging(i)"
-    (mouseup) = "stopDragging()"
-    >
-        <img [src]="skill.icon" 
-         [alt]="skill.name" 
-         [title]="skill.name" 
-         width="70" height="60"/>
+<div class="skill-wrapper" [class.dragging]="currentlyDragging != undefined" (mousemove)="mouseMove($event)">
+    <div *ngFor="let skill of skills; index as i" class="skill" [style.left]="skillPositions[i][0]"
+        [style.top]="skillPositions[i][1]" [style.transform]="skillPositions[i][2]"
+        [class.dragging]="currentlyDragging != undefined" (mousedown)="startDragging(i)" (mouseup)="stopDragging()">
+        <img [src]="skill.icon" [alt]="skill.name" [title]="skill.name" width="70" height="60" />
     </div>
 </div>
